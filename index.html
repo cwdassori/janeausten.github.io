@@ -3,6 +3,12 @@
 <html>
         <head>
         <style type = "text/css">
+
+            .headerContainer{
+                display: flex;
+                width:100%
+            }
+
             .header1{
                 width:50%;
                 height:200px;
@@ -11,9 +17,7 @@
                 background-position:center;  
             }
             .header2{
-                top:0px;
                 width:50%;
-                left:50%;
                 background-image:url(header2.png);
                 background-size:cover;
                 height:200px;
@@ -33,17 +37,25 @@
                 background-color:white;
                 font-size:30px;
                 color:black;
+
+
                 display: flex;
                 justify-content: center; /* Centers horizontally */
                 align-items: center;     /* Centers vertically */
+
+                margin: 40px auto;
+                text-align: center;
             }
+
 
         </style>
         </head>
         <body style="background-color: #ffe2e6;">
-        <div class="header1">
-        </div>
-        <div class="header2">
+        <div class = "headerContainer">
+            <div class="header1">
+            </div>
+            <div class="header2">
+            </div>
         </div>
         <a href="janeausten.html">
             <div class = "nextPage";></div>
