@@ -6,8 +6,7 @@
     <style type = "text/css">
 
         body{
-            background-color: #e52d61;
-
+            background-color: #f9778b;
         }
 
         #profiles{
@@ -40,24 +39,23 @@
             background-color: white;
             height:75px;
             width:200px;
+            background-color: #c2e9bf;
             color:black;
 
             justify-content:center;
-            display: inline-block;
             align-items:center;
             text-align: center;
             margin:40px auto;
-
         }
 
         #no{
             background-color: white;
             height:75px;
             width:200px;
-            color:black;
+            background-color: #ffe2e6;
+            color: black;
             
             justify-content:center;
-            display: inline-block;
             align-items:center;
             text-align:center;
             margin:40px auto;
@@ -76,7 +74,10 @@
             top: -15px;
             left:50%; */
             z-index:3;
+        }
 
+        .invisible{
+            opacity:0;
         }
 
 
@@ -88,7 +89,7 @@
 
         <div id = "profiles">
             <div class = "stack elizabeth">
-                Elizabeth Bennet
+                <strong>Elizabeth Bennet</strong>
                 <br>
                 Age: 20
                 <br>
@@ -122,6 +123,12 @@
 
         <div id = "no">I would prefer not to pursue this match. 
         </div>
+
+        <script type = "text/javascript">
+            yes.addEventListener("click", function(){
+                test.classList.add("invisible");
+            })
+        </script>
 
     </body>
 </html>
