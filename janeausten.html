@@ -17,7 +17,7 @@
             margin: 20px auto;
         }
 
-        #elizabeth{
+        .elizabeth{
             width:100%;
             height:100%;
             background-color: #ffe2e6;
@@ -35,7 +35,7 @@
             z-index: 2;
         }
 
-        #test{
+        .test{
             height: 30px;
             width: 30px;
             background-color:black;
@@ -88,7 +88,7 @@
     <body>
 
         <div id = "profiles">
-            <div id = "stack elizabeth">
+            <div class = "stack elizabeth">
                 <strong>Elizabeth Bennet</strong>
                 <br>
                 Age: 20
@@ -115,7 +115,7 @@
                 and I would happily spend a long walk discussing each of our novels.
                 <br>
                 </div>
-            <div id = "stack test"></div>
+            <div class = "stack test"></div>
         </div>
 
         <div id = "yes">I should like to pursue this match!
@@ -126,7 +126,7 @@
 
         <script type = "text/javascript">
             yes.addEventListener("click", function(){
-                test.classList.add("invisible");
+                document.querySelector(".test").classList.add("invisible");
             })
         </script>
 
