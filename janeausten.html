@@ -228,6 +228,7 @@
     <body>
 
         <div id = "profiles">
+            <!-- just had the great idea to make this box the warning message thats like "why didn't you say yes to anyone??" -->
             <div class = "stack elizabeth">
                 <strong>Miss Elizabeth Bennet</strong>
                 <br>
@@ -541,6 +542,14 @@
                 console.log(yesList);
             })
 
+            function matchSelector(arr){
+                const randomIndex = Math.ceil(Math.random() * arr.length);
+            }
+
+            if (profCounter == 0){
+                const matchNumber = matchSelector(yesList);
+                console.log(matchNumber);
+            }
 
             
         </script>
