@@ -16,6 +16,7 @@
             background: lightgray;
             margin: 20px auto;
             border-radius:15px;
+            z-index:-20;
         }
 
         .elizabeth{
@@ -189,6 +190,28 @@
             position: absolute;
             z-index: 10;   
         }
+        
+        .Melizabeth{
+            opacity: 0;
+            width:100%;
+            height:100%;
+            background-color: #CAE9F5;
+            background-size: contain;
+            color: black;
+            padding-top:20px;
+            padding-left:20px;
+            padding-right:20px;
+            border-radius:15px;
+            font-size: 40px;
+
+            /* display: flex; */
+            justify-content: center; 
+            align-items: center;
+            /* margin:20px auto;    */
+            position: absolute;
+            z-index: -1;
+        }
+
 
         #yes{
             background-color: white;
@@ -222,12 +245,17 @@
             opacity:0;
         }
 
+        .visible{
+            opacity:1;
+        }
+
 
     </style>
     </head>
     <body>
 
         <div id = "profiles">
+            Oh dear... it seems you haven't matched with anyone. If you require my services again, I must insist that you approve at least <em>some</em> of my potential matches.
             <!-- just had the great idea to make this box the warning message thats like "why didn't you say yes to anyone??" -->
             <div class = "stack elizabeth">
                 <strong>Miss Elizabeth Bennet</strong>
@@ -438,6 +466,37 @@
                 <br>
                 I should love to travel to the north of England together, or even to Scotland. I adore the scenery there, from what I have seen on my travels with the army, and I should greatly appreciate a travelling partner when I next return. 
             </div>
+            <div class = "Melizabeth">
+                Congratulations! You have matched with Miss Elizabeth Bennet. I look forward to formally introducing the two of you at the next possible opportunity.
+            </div>
+            <div class = "Mbingley">
+                Congratulations! You have matched with Mister Bingley. I look forward to formally introducing the two of you at the next possible opportunity.
+            </div>
+            <div class = "Mharriet">
+                Congratulations! You have matched with Miss Harriet Smith. I look forward to formally introducing the two of you at the next possible opportunity.
+            </div>
+            <div class = "Mcollins">
+                Congratulations! You have matched with Mister Collins. I look forward to formally introducing the two of you at the next possible opportunity.
+            </div>
+            <div class = "Mjaneb">
+                Congratulations! You have matched with Miss Jane Bennet. I look forward to formally introducing the two of you at the next possible opportunity.
+            </div>
+            <div class = "Mfrank">
+                Congratulations! You have matched with Mister Frank Churchill. I look forward to formally introducing the two of you at the next possible opportunity.
+            </div>
+            <div class = "Mlydia">
+                Congratulations! You have matched with Miss Lydia Bennet. I look forward to formally introducing the two of you at the next possible opportunity.
+            </div>
+            <div class = "Mdarcy">
+                Congratulations! You have matched with Mister Darcy. I look forward to formally introducing the two of you at the next possible opportunity.
+            </div>
+            <div class = "Mjanef">
+                Congratulations! You have matched with Miss Jane Fairfax. I look forward to formally introducing the two of you at the next possible opportunity.
+            </div>
+            <div class = "Mwickham">
+                Congratulations! You have matched with Mister Wickham. I look forward to formally introducing the two of you at the next possible opportunity.
+            </div>
+
         </div>
 
         <div id = "yes">I should like to pursue this match!
