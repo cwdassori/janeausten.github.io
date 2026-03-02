@@ -447,8 +447,14 @@
         </div>
 
         <script type = "text/javascript">
-                let profCounter = 10
-                let yesList = [];
+                
+            let profCounter = 10
+            let yesList = [];
+
+            function matchSelector(arr){
+                const randomIndex = Math.floor(Math.random() * arr.length);
+                return arr[randomIndex];
+            }
 
             no.addEventListener("click", function(){
                 if(profCounter == 10){
@@ -492,6 +498,11 @@
                 }
                 
                 profCounter--;
+
+                if (profCounter == 0){
+                    const matchNumber = matchSelector(yesList);
+                    console.log(matchNumber);
+                }
             })
 
             
@@ -540,20 +551,22 @@
 
                 profCounter--;
                 console.log(yesList);
+
+                if (profCounter == 0){
+                    const matchNumber = matchSelector(yesList);
+                    console.log(matchNumber);
+                }
             })
 
 
             // something about this isn't working but i'm really not sure what so i think this is a problem for future charlotte
-            function matchSelector(arr){
-                const randomIndex = Math.floor(Math.random() * arr.length);
-            }
 
-            if (profCounter == 0){
-                const matchNumber = matchSelector(yesList);
-                console.log(matchNumber);
-            }
 
-            
+            // if (profCounter == 0){
+            //     const matchNumber = matchSelector(yesList);
+            //     console.log(matchNumber);
+            // }
+
         </script>
 
     </body>
