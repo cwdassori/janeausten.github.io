@@ -9,6 +9,26 @@
             background-color: #f9778b;
         }
 
+        .headerContainer{
+                display: flex;
+                width:100%;
+            }
+
+        .header1{
+            width:50%;
+            height:200px;
+            background-image: url('newheader1.png');
+            background-size:cover;   
+            background-position:center;  
+        }
+        
+        .header2{
+            width:50%;
+            background-image:url(header2.png);
+            background-size:cover;
+            height:200px;
+        }    
+
         #profiles{
             position: relative;
             width: 1000px;
@@ -409,6 +429,8 @@
             background-color: #c2e9bf;
             color:black;
             border-radius:15px;
+            display: flex;
+            cursor: pointer;
 
             justify-content:center;
             align-items:center;
@@ -423,6 +445,8 @@
             background-color: #ffe2e6;
             color: black;
             border-radius:15px;
+            display: flex;
+            cursor: pointer;
             
             justify-content:center;
             align-items:center;
@@ -442,6 +466,14 @@
     </style>
     </head>
     <body>
+
+        <div class = "headerContainer">
+            <div class="header2">
+            </div>
+            <div class="header1">
+            </div>
+            
+        </div>
 
         <div id = "profiles">
             <!-- Oh dear... it seems you haven't matched with anyone. If you require my services again, I must insist that you approve at least <em>some</em> of my potential matches. -->
@@ -656,34 +688,34 @@
                 I should love to travel to the north of England together, or even to Scotland. I adore the scenery there, from what I have seen on my travels with the army, and I should greatly appreciate a travelling partner when I next return. 
             </div>
             <div class = "Melizabeth">
-                Congratulations! Miss Elizabeth Bennet is also interested in matching with you. I look forward to formally introducing the two of you at the next possible opportunity.
+                Congratulations! Miss Elizabeth Bennet is also interested in matching with you. I look forward to formally introducing the two of you at the upcoming Netherfield ball!
             </div>
             <div class = "Mbingley">
-                Congratulations! Mister Bingley is also interested in matching with you. I look forward to formally introducing the two of you at the next possible opportunity.
+                Congratulations! Mister Bingley is also interested in matching with you. I look forward to formally introducing the two of you at the upcoming Netherfield ball!
             </div>
             <div class = "Mharriet">
-                Congratulations! Miss Harriet Smith is also interested in matching with you. I look forward to formally introducing the two of you at the next possible opportunity.
+                Congratulations! Miss Harriet Smith is also interested in matching with you. I look forward to formally introducing the two of you at the upcoming Netherfield ball!
             </div>
             <div class = "Mcollins">
-                Congratulations! Mister Collins is also interested in matching with you. I look forward to formally introducing the two of you at the next possible opportunity.
+                Congratulations! Mister Collins is also interested in matching with you. I look forward to formally introducing the two of you at the upcoming Netherfield ball!
             </div>
             <div class = "Mjaneb">
-                Congratulations! Miss Jane Bennet is also interested in matching with you. I look forward to formally introducing the two of you at the next possible opportunity.
+                Congratulations! Miss Jane Bennet is also interested in matching with you. I look forward to formally introducing the two of you at the upcoming Netherfield ball!
             </div>
             <div class = "Mfrank">
-                Congratulations! Mister Frank Churchill is also interested in matching with you. I look forward to formally introducing the two of you at the next possible opportunity.
+                Congratulations! Mister Frank Churchill is also interested in matching with you. I look forward to formally introducing the two of you at the upcoming Netherfield ball!
             </div>
             <div class = "Mlydia">
-                Congratulations! Miss Lydia Bennet is also interested in matching with you. I look forward to formally introducing the two of you at the next possible opportunity.
+                Congratulations! Miss Lydia Bennet is also interested in matching with you. I look forward to formally introducing the two of you at the upcoming Netherfield ball!
             </div>
             <div class = "Mdarcy">
-                Congratulations! Mister Darcy is also interested in matching with you. I look forward to formally introducing the two of you at the next possible opportunity.
+                Congratulations! Mister Darcy is also interested in matching with you. I look forward to formally introducing the two of you at the upcoming Netherfield ball!
             </div>
             <div class = "Mjanef">
-                Congratulations! Miss Jane Fairfax is also interested in matching with you. I look forward to formally introducing the two of you at the next possible opportunity.
+                Congratulations! Miss Jane Fairfax is also interested in matching with you. I look forward to formally introducing the two of you at the upcoming Netherfield ball!
             </div>
             <div class = "Mwickham"> 
-                Congratulations! Mister Wickham is also interested in matching with you. I look forward to formally introducing the two of you at the next possible opportunity.
+                Congratulations! Mister Wickham is also interested in matching with you. I look forward to formally introducing the two of you at the upcoming Netherfield ball!
             </div>
             <div class = allNo>
                 Oh dear! It seems you haven't agreed to any of your potential matches. You'll have to be open to at least one if you want my help!
@@ -752,6 +784,9 @@
                 if (profCounter == 0){
                     const matchNumber = matchSelector(yesList);
                     console.log(matchNumber);
+
+                    document.querySelector("#yes").classList.add("invisible");
+                    document.querySelector("#no").classList.add("invisible");
 
                     if(matchNumber == 10){
                         document.querySelector(".Mwickham").classList.add("visible");
@@ -845,6 +880,9 @@
                 if (profCounter == 0){
                     const matchNumber = matchSelector(yesList);
                     console.log(matchNumber);
+
+                    document.querySelector("#yes").classList.add("invisible");
+                    document.querySelector("#no").classList.add("invisible");
 
                     if(matchNumber == 10){
                         document.querySelector(".Mwickham").classList.add("visible");
